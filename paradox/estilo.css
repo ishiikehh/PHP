@@ -1,0 +1,271 @@
+/*localização das fontes*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
+
+/*localização das DIVs*/
+div#main {
+    height: auto;
+    width: 99%;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    box-shadow: inset 0 2px 3px 0 rgba(255, 255, 255, .3), inset 0 -3px 6px 0 rgba(0, 0, 0, .2), 0 3px 2px 0 rgba(0, 0, 0, .2);
+    background-image: linear-gradient(to bottom, #555, black 130%);
+    position: fixed;
+    margin-top: -8px;
+}
+div#page{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 1024px;
+    height: auto;
+    box-shadow: #999 0.2em 0.1em 1em;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 50px;
+    background-color: #ffffff;
+
+}
+div#pages{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 700px;
+    height: auto;
+    box-shadow: #999 0.2em 0.1em 1em;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 50px;
+    background-color: #ffffff;
+
+}
+div#pagesfd{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    width: 700px;
+    height: auto;
+    box-shadow: #999 0.2em 0.1em 1em;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 50px;
+    background-color: #ffffff;
+
+}
+div#login{
+    text-align: right;
+
+}
+div#update{
+    margin-top: 200px;
+}
+div#logout{
+    display: block;
+    position: absolute;
+    margin-top: -50px;
+    text-align: left;
+    width: 1200px;
+}
+div#footer{
+    background-color: #222;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+    color: #ffffff;
+    font-size: 15pt;
+}
+div#pagenum{
+    text-align: right;
+    margin-right: 20px;
+}
+div#capadolivro{
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 680px;
+}/*input*/
+input#login{
+    padding: 5px;
+    width: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    transition: 1s;
+    margin-right: 400px;
+    border-color: #999;
+}
+input#login:hover{
+    border-color: #000;
+    box-shadow: black 0.3em 0.3em 0.5em;
+}
+input#pass{
+    padding: 5px;
+    width: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    transition: 0.8s;
+    margin-right: 400px;
+    border-color: #999;
+}
+input#pass:hover{
+    border-color: #000;
+    box-shadow: black 0.3em 0.3em 0.5em;
+}
+input#button{
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18pt;
+    background-image: linear-gradient(to bottom, #555, black 130%);
+    color: #ffffff;
+    margin-right: 515px;
+    transition: 2s;
+}
+input#button:hover{
+    border-radius: 8px;
+    border-color: #000000;
+    background-image: linear-gradient(to bottom, #999, black 130%);
+    box-shadow: black 0.3em 0.3em 0.5em;
+}
+
+/*imagem*/
+figure#capa{
+    box-shadow: #999 0em 0em 1.5em;
+}
+figure#logo{
+    position: absolute;
+    margin-left:10px;
+    margin-top: 5px;
+}
+figure#logom{
+    position: absolute;
+    margin-left:10px;
+    margin-top: 5px;
+    padding: -5px;
+}
+/*localização dos textoe*/
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26pt;
+    margin-left: 120px;
+}
+h1#super404{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 75pt;
+    margin-right: 300px;
+    transition: 1s;
+}
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 28pt;
+    padding: 0px;
+}
+h3{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20pt;
+}
+h3#login{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20pt;
+    margin: 0px;
+    margin-right: 600px;
+    transition: 1.5s;
+}
+h4{
+    font-family: 'Lobster', cursive;
+    font-size: 14pt;
+}
+h5{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 14pt;
+}
+h5#conversa{
+    margin-left: 40px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 14pt;
+}
+a#persons{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 16pt;
+}
+a#persons:hover{
+    text-decoration: dotted;
+    color: #555555;
+
+}
+a#home{
+    margin-top: -60px;
+    margin-left: 900px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+a#home:hover{
+    color: #999999;
+}
+a#index{
+    text-decoration: none;
+    color: #000;
+}
+a#index:hover{
+    color: #999999;
+}
+p{
+    font-family: 'Lobster', cursive;
+    font-size: 15pt;
+    width: 500px;
+}
+a#logoInsider{
+    text-decoration: none;
+    color: white;
+    margin-left: 600px;
+}
+a#logoInsider:hover{
+    text-decoration: none;
+    color: #999;
+}
+/* menu de navegação*/
+div#menu{
+    margin-top: 0px;
+    margin-left: 800px;
+    width: 700px;
+}
+
+nav#menu ul {
+    list-style: none;
+    position: absolute;
+    margin-top: -100px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: rgba 1 1 1 0;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: white;
+    box-shadow: #999 0em 0em 1em;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16pt;
+}
+nav#menu a:hover {
+    color: midnightblue;}
+/*fim de menu*/

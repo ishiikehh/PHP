@@ -1,0 +1,27 @@
+pre{width: 1000px;}
+a#asteristico{
+    font-family: cursive;
+    font-size: 10pt;
+    color: #ffffff;
+    text-decoration: none;
+}
+a#nav{
+    color: #fff;
+    text-decoration: none;
+}
+a#nav:hover{
+    color: #888888;
+}
+fieldset{background-color: #000000;
+border-color: #000000;
+}
+fieldset#nav{
+    display: block;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -45px;
+    background-color: transparent;
+    padding: 10px;
+    width: 160px;
+    border-color: #ffffff;
+}

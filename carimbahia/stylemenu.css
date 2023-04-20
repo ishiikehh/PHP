@@ -1,0 +1,119 @@
+@charset 'UTF-8';
+/*GLOBAIS*/
+*{
+	margin:0;
+	padding:0;
+	font-family:'Arial';
+}
+/*Limpa os estilos, coloca a posição e a distancia para a esquerda e sobe a lista*/
+.menu>ul{
+    margin-top: -10px;
+	list-style:none;	
+	position:relative;
+	margin-left:50px;
+}
+/*Organizado da esquerda direita*/
+.menu ul li{
+		float:left;
+}
+/*coloca o padding no butao, coloca lado a lado, tira o sublinhado do link, centraliza o texto*/
+.menu a{
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	text-align:center;
+}
+/*Retira os icones de lista, coloca posição dos butoes como absoluto, e a visibilidade ate o limite da div*/
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+}
+/*deixa o sub menu visivel quando passa o mouse*/
+.menu ul li:hover ul{
+	visibility:visible;
+}
+/*muda a cor do butao ao passar o mouse*/	
+.menu a:hover{
+	background-color:#c54646;
+}
+/*deixa todos os butoes do mesmo tamanho*/
+.menu ul ul li{
+	float:none;
+    background-color: #c54646;
+	border-bottom: solid 1px #ccc;
+}
+/*cor do submenu*/
+.menu ul ul li a{
+	background-color:#751c1c;
+}
+/*esconde o botao do menu de sanduiche*/
+#bt_menu{
+	display: none;
+}
+/*Estilo do botao de Saduiche*/
+label[for='bt_menu']{
+	padding:5px;
+	background-color:#751c1c;
+	color:#fff;
+	font-family:'Arial';
+	text-align:center;
+	font-size:30px;
+	cursor:pointer;
+	display:none;
+	width:50px;
+	height:50px;
+}
+/*Estilo do butão ao passar o mouse*/	
+label[for='bt_menu']:hover{
+	background-color:#f4f4f4;
+	color:#751c1c;
+}
+/*Verifica o tamanho da tela*/
+@media (max-width: 1200px) {
+/*Esconde o menu antes de apertar*/
+.menu{
+    position: absolute;
+    margin-left: 0;
+	top: -700%;
+	transition:all .4s;
+}
+/**/
+label[for='bt_menu']{
+	display:block;
+}
+/**/
+.menu>ul{
+	margin-left:0;
+}
+/**/
+.menu{
+	margin-top:5px;
+}
+/**/
+.menu ul li{
+	width:100%;
+	float:none;
+}
+/**/
+.menu ul ul{
+	position:static;
+	overflow:hidden;
+	max-height:0;
+	transition:all .4s;
+}
+/**/
+.menu ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+}
+/*Movimenta o menu ao apertar o butao*/
+#bt_menu:checked ~ .menu{
+    background-color: #c54646;
+    width: 500%;
+	margin-left:-400%;
+    top: 100%;
+}
+}
